@@ -2,7 +2,7 @@ import React from 'react';
 import { useAuth } from '../context/AuthContext'; // ADDED: Import useAuth
 import { useDarkMode } from '../context/DarkModeContext';
 import { Link } from 'react-router-dom'; // ADDED: Import Link
-import RaahiLogo from './RaahiLogo';
+import RaahiLogo from './raahiLogo';
 
 const Header = () => {
   const { currentUser, logout } = useAuth(); // ADDED: Get auth state

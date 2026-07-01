@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('raahi_token'));
 
   // Backend URL - Make sure this matches your backend URL
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
   // Check if user is logged in on app start
   useEffect(() => {
